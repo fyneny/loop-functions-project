@@ -35,6 +35,6 @@ function checkUserExist ($email){
     }
        return false;
 }
-echo "HANDLE THIS PAGE";
+
 
 

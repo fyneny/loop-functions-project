@@ -25,7 +25,13 @@
   </div>
 </nav>
 <div class="container justify-content-center">
-     <h1 class="">Welcome to Zuri Authentication `USERNAME`</h1>
+     <h1 class="">Welcome to Zuri Authentication  
+       <?php 
+       session_start();
+       if($_SESSION || isset($_SESSION['username'])){
+       echo $_SESSION ['username'];
+       }?>
+     </h1> 
 </div>
    
 </body>
